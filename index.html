@@ -81,7 +81,7 @@
 										<p><strong></strong>
  </p>
 										<a href="img/price.pdf" class="button">Наші ціни</a>
-										<a href="zakaz/zakaz.html" class="button">Зробити замовлення</a>
+										<button class="button" id="zamovlenia">Зробити замовлення</button>
 										<p><span>Приймаємо безготівкові платежі (з ПДВ та без ПДВ), приймаємо оплату карткою</span></p>
 
 									</div>
@@ -446,7 +446,57 @@
 		
 	<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
 
+	<div class="modal-overlay">
+		<div class="modal">
+
+			<a class="close-modal">
+				<svg viewBox="0 0 20 20">
+					<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+				</svg>
+			</a><!-- close modal -->
+
+			<div class="modal-content">
+				<h3>
+					<form action="mail.php" method="POST" enctype="multipart/form-data">
+						<legend></legend>
+
+						<div class="form-group">
+							<label for=""></label>
+							<input type="text" class="form-control" id="" name="user_name" placeholder="Ваше ім'я">
+						</div>
+
+						<div class="form-group">
+							<label for=""></label>
+							<input type="text" class="form-control" id="" name="user_phone" placeholder="введіть номер телефону ">
+						</div>
+						<div class="form-group">
+							<label for=""></label>
+							<input type="text" class="form-control" id="" name="email" placeholder="ваш email">
+						</div><div class="form-group">
+						<label for=""></label>
+						<input type="text" class="form-control promofor1" id="" name="promo" placeholder="промокод на знижку">
+					</div>
+						<div class="form-group procentspromo invis">10% скидка</div>
+
+						<div class="form-group">
+							<label for=""></label>
+							<input type="file" id="" name="upload" placeholder="mail@mail.ru">
+						</div>
+
+						<button class="promofor" type="submit" class="#">Відправити замовлення</button>
+					</form>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+
+
+			</div></div>
+
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/modal.css">
+		<script src="js/modal.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 
